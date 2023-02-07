@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../assets/bg\ pwskill.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav {
+  height: auto;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  color: white;
+  align-items: center;
+}
+nav .logo {
+  width: 200px;
+  padding: 20px 70px;
+}
+
+#box {
+  height: 30px;
+  width: 100%;
+}
+.line {
+  height: 40px;
+}
+.vaii {
+  width: 78%;
+}
+ul {
+  display: flex;
+  gap: 70px;
+  margin-left: 40px;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+ul li a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+button {
+  height: 34px;
+  width: 110px;
+
+  background-color: #b90ecf;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 7px;
+}
+button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  margin-top: 200px;
+}
+
+p {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 900;
+}
+section button {
+  height: 50px;
+  width: 200px;
+  justify-content: center;
+
+  margin-left: 650px;
+  margin-top: 30px;
+  font-weight: 900;
+  font-size: 15px;
+}
+/* echo "# pw-skill" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/nareshshahi/pw-skill.git
+git push -u origin main */
