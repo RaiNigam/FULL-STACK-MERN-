@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 0; */
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+  body{
+    background-color: #F0F4F5;
+  }
+  .container{
+    margin:0 12vw 0 8vw;
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:32px 0;
+  }
+  li{
+    list-style-type: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  .logo img{
+    height:48px;
+  }
+  .links ul{
+    display: flex;
+    gap:50px;
+  }
+  .links ul li a{
+    color:#000000;
+    font-weight: 600;
+  }
+  .feedbackForm label{
+    display: block;
+  }
+  .feedbackForm button{
+    display: block;
+  }
+  .feedbackForm{
+    border:1px solid black;
+
+    box-shadow: black 0px 0px 10px;
+    width:fit-content;
+    padding:10px 20px;
+    border-radius: 10px;
+
+  }
+  .feedbackCard{
+    display: flex;
+    height:90vh;
+    justify-content: center;
+    align-items: center;
+
+    
+
+  }
+  .feedbackForm h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .feedbackForm label{
+    font-weight: 500;
+    font-size: 18px;
+
+
+  }
+  .feedbackForm input{
+    border-radius: 5px;
+    width:20vw;
+    margin-bottom: 20px;
+    padding:5px 3px 2px;
+    border:none;
+  }
+  #message{
+    height:100px;
+    width:20vw;
+
+    resize: none;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    border:none;
+  }
+
+
+  .feedbackForm button{
+    background-color:#20BC7E;
+    width:20vw;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color:white;
+    border-radius: 5px;
+    padding:5px 0;
+    border:none;
+  }

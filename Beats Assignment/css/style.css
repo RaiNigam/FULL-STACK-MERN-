@@ -1,0 +1,339 @@
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    font-family: 'Poppins', sans-serif;
+    
+    color:white;
+    box-sizing: border-box;
+}
+body{
+    margin:0 12vw;
+    background-color: #0F0F10;
+}
+.navbar{
+    display: flex;
+    padding:30px;
+    align-items: center;
+}
+.links{
+    display: flex;
+    gap:40px;
+    align-items: center;
+
+}
+.navbar div:first-child{
+    flex-grow: 1;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.logo img{
+    width:25px;
+}
+.links li:last-child>a>button{
+    padding:10px 40px;
+    border-radius: 5px;
+    font-weight: normal;
+    border:2px solid black;
+    background-color: #0F0F10;
+}
+.intro_section{
+    display: flex;
+    gap:50px;
+    justify-content: center;
+   /* border:5px solid red; */
+   height:70vh;   
+}
+.intro_section_left{
+    height:fit-content;
+    width:700px;  
+}
+.intro_section_headphone{
+   position: relative;
+    top:-250px;
+    left:70px;
+    
+}
+.intro_section button{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    background-color:#1E1E21;
+    padding:10px 35px;
+    border-radius: 10px;
+}
+.intro_section_right{
+    padding-top: 70px;   
+}
+.onear{
+    margin-left: 30px;
+    height:50px;
+}
+.intro_section_right h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.intro_section_right h4{
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.intro_section_right>p{
+    margin-bottom: 20px;
+    font-weight: 100;
+    color: #bdc0c2;
+    font-size: 12px;
+}
+.intro_section_right button p,.intro_section_right button img{
+    background-color: #1E1E21;
+}
+
+.price{
+    background-color: #1E1E21;
+    font-size: 1rem;
+}
+.intro_section_right button p{
+    font-size: 12px;
+}
+.company{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.company img{
+    height:25px;
+}
+.specs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.specs_content{
+    display: flex;
+    gap:60px;
+    align-items: center;
+}
+.specs_title{
+    margin-bottom: 40px;
+}
+.title{
+    margin:5px;
+}
+.sub_title{
+    margin-bottom: 30px;
+
+    color: #bdc0c2;
+
+    font-size: 12px;
+}
+.battery,.charger{
+    margin-left:-40px;
+}
+.case{
+    margin:100px 0;
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+    justify-content: center;
+    align-items: center;
+}
+.case_content_section{
+    display: flex;
+    align-items: center;
+    gap:60px;
+    justify-content: center;
+    width:40vw;
+    
+}
+.case_right_section p{
+    color:#bdc0c2;
+    font-size: 14px;
+}
+
+.case_right_section button{
+    background-color: #181A1B;
+    display: flex;
+    align-items: center;
+    gap:20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.buy{
+    display: flex;
+    /* flex-direction: row; */
+    background-color:#181A1B;
+    width:100%;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    padding:40px 15px;
+    margin-bottom: 100px;
+}
+.buy_left_section{
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+}
+.buy_left_section p:first-child{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.buy_left_section p:nth-child(2){
+    color:#bdc0c2;
+    font-size: 14px;
+}
+.buy_left_section button{
+    width:fit-content;
+    background-color:#0F0F10;
+    padding:10px 20px;
+    border-radius: 5px;
+    display: flex;
+    gap:10px;
+    align-items: center;
+
+}
+.headphone{
+    height:130px;
+    width:140px;
+    background-color:#181A1B;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    position:relative;
+}
+.img_headphone img{
+    height:100px;
+   
+}
+
+.img_headphone{
+    grid-column:1/3;
+    grid-row: 1/2;
+    position: relative;
+    top:-40px;
+    height:fit-content;
+    display: flex;
+    justify-content: center;
+    
+}
+.details_headphone{
+    display: flex;
+    
+    align-items: center;
+    margin-top: -20px;
+}
+
+
+.colour{
+    font-size: 10px;
+    width:100px;
+}
+.headphone_price{
+    color:#bdc0c2;
+    font-size: 10px;
+}
+.shoppingBag{
+    background-color: #0F0F10;
+    padding:2px 5px;
+    border-radius: 4px;
+}
+.shoppingBag img{
+    height:15px;
+}
+.style{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 100px;
+}
+.style_content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 60px;
+    row-gap: 50px;
+}
+.case_title img,.specs_title img{
+   height:50px;
+}
+.style_title img{
+    height:90px;
+}
+footer{
+    margin:100px 0;
+    margin-right:0;
+
+    display: grid;
+    grid-template-columns: 
+    repeat(4,1fr);
+}
+
+.email{
+    background-color: #1E1E21;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    padding:2px 7px;
+    border-radius: 10px;
+}
+.email input{
+    background-color: #1E1E21 ;
+    margin:15px 0;
+    border:none;
+    
+}
+.email button{
+    background-color: #0F0F10;
+    padding:8px 20px;
+    display: flex;
+    justify-content: space-between
+    ;
+    gap:10px;
+    border-radius: 5px;
+    
+}
+.socials{
+    height:30px;
+    display: flex;
+    gap:25px;
+
+}
+.products, .supports{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    font-size: 12px;
+    
+}
+.products li a,.supports li a{
+    color:#bdc0c2;
+}
+.footerTitle{
+    margin-bottom: 20px;
+}
+.upArrow img{
+    position:relative;
+    top:-250px;
+
+    right:-100px;
+    
+
+ 
+}
+.upArrow{
+    display: flex;
+    justify-content: end;
+}
