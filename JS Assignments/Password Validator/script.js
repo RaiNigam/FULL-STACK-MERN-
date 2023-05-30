@@ -1,5 +1,5 @@
 const password=document.querySelector('.password');
-console.log(password.value);
+
 
 const confirmPwd=document.querySelector('.confirmPwd');
 console.log(confirmPwd.value);

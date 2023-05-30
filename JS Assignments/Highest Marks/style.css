@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    height:100vh;
+    justify-content:center;
+    align-items: center;
+
+}
+.box{
+    display: flex;
+
+    gap:40px;
+    border:5px solid black;
+    padding:10px 20px;
+    background-color: black;
+    width:60vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color:white;
+    font-weight: 900;
+}
+.btn{
+    padding:5px 15px;
+    color:white;
+    background-color: blue;
+    
+}

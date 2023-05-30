@@ -1,0 +1,46 @@
+body{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    border:5px solid red;
+    padding:10px 30px;
+    border-radius:25px;
+    background-color: aqua;
+    display: flex;
+    height:70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+
+.operators{
+
+    display: flex;
+    /* width:100%; */
+    gap:40px;
+    
+}
+.operate{
+    padding:5px 10px;
+    background-color: green;
+    cursor: pointer;
+}
+label{
+    display: block;
+}
+input{
+    width:200px;
+    height:30px;
+    margin-bottom: 20px;
+}
+.calculate{
+    padding:10px 20px;
+    background-color: red;
+    color:white;
+    font-weight: 900;
+}
