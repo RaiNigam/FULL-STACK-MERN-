@@ -1,0 +1,94 @@
+1.What is a database ?Explain with an example on why should we need a database.
+Database is a collection of organized data. There are millions and millions of data out there, and without keeping or storing it somewhere, we would not be able to preserve the data. So for this we need database. An example on why we need a database may be in the use of websites, where we take many datas from the user and also have to show many dynamic datas to the user, for this we need database. Basically, the most important thing is it help to store and compute(use) the data.
+
+2.Write a short note on File Base storage system. Explain the major challenges of a File-based storage system. 
+After the invention of computer, the next challenge was the storage. The computer could perform different tasks and calculations but it could not store it and use it. So for this problem, file base storage system came as a solution. File base storage system is basically a system where we store the data in forms of folders, files and sub-folders. The main storage is in file which is in different folder which may be a sub-folder to a main folder.
+But this system like other system, had some flaws. Some of the major flaws it had or the challlenges of file-based storage system are:
+i.Data redundancy and inconsistency
+Redundancy means duplication of data. The data are being repeated. In file based storage system, there was huge amount of data redundancy. The data were also not consistent because when we updated data in one file, the same data in other file stays the same which is also known as update anamoly. And we might use or read the previous data which leads to read anamoly. When we want to insert new data, we will not know where we already have the data or not which ultimately lead to duplication, this is known as write anamoly.
+
+ii. Security Concerns
+In file based system, there was no protection of data. There was no provision for authentication and everything. The datas were less clear. Anyone could easily look into our data.
+
+iii. Programming and time taking
+Programming for data retrieval ,updation,deletion was very hard with File base storage system as it was not closely related to programming languages, meaning we had to write complex and long lines of code if we wanted to do something. And if we wanted to do it manually, it would take a lot of time because there was many datas. 
+
+iii.Concurrent Usage.
+The meaning of concurrent usage is the usage of the system simultaneously which was not possible in this system. Only one person could use it in one time while the other had to wait.
+
+
+
+3. What is DBMS? What was the need for DBMS?
+DBMS is a software which is used to manage the database. Since there were many flaws in file based storage system, DBMS was introduced to remove these flaws.
+
+4.Explain 5 challenges of file-based storage system which was tackled by DBMS.
+The 5 challenges of file-based storage system are :
+i.Redundancy
+There was huge duplication of data in file-based storage system, but in DBMS if we are not allowed to store same data which will lead to a unique datas.
+
+ii.Consistency
+Since there is unique datas and when we update data in one table, the same data in another table also gets updated which will lead to consistent data.
+
+iii.Security.
+There was no provision of authentication in file based-storage system whereas in DBMS we can put multi-level authentication which makes it more secure.
+
+iv.Easy interaction
+The language that acts as a mediator between the database and the user is easy to understand and use in DBMS. Some examples are SQL,oracle.
+
+5. List out the different types of classification in DBMS and explain them in depth.
+The different types of DBMS are :
+i.Classification based on user
+a.Single user
+When a database is only used by one user or is intended to by used by one only person, it is a single user database. 
+b.Multi user
+When a database contains information of many users it is called, multi user database. For example the database of a bank is used by many people and also contains the informations of many customers.
+
+ii.Classification based on database distribution
+a.Centralized systems.
+When the database is limited to a single place, it is called centralized systems. This type of system is slower and there is high risk of loss of data.
+
+b.Distributed Systems. 
+When the database are kept in different locations, it is called distributed systems. For examples of databases of facebook, google are kept in many places. This type of system is much faster.
+
+6.What is the significance of Data Modeling and explain the types of data modeling.
+The significance of data modeling is it helps to achieve efficient storage and fast computation. 
+The types of data modeling are :
+i.High level conceptual Model
+In this model, the data are shown as real-word entities and there is relationships formed between these entities. For example, a teacher may be an entity with attributes name, age, id etc and there might be another entity student with attributes name, age, addresse etc and there is a relationships between these entities which is that a teacher teacher teaches students.
+
+
+ii.Record base logical data models. 
+In this model, the representaion is in such a way how we save or store in a computer which is easy to understand. It is further divided into:
+a.Hieracrhial Model 
+In this model, the data are stored in a tree-like structure where a parent has two or more child and one child has one parent. A real example is the hierarchy in a organization where in a company there is chairman at the top and employees at the bottom.
+
+b.Network Model
+This model is an extension of hierarchial model, but in this model the child also has multiple parents.
+
+c.Relational Model.
+In this model, the data are represented in the form of table and there is relationships between them. 
+
+iii. Phyiscal data model
+In this model, it ensures how the data is stored, retrieved,arranged physically in computer memory.
+
+
+
+7.Explain 3 schema architecture along its advantages.
+Schema is the blueprint/design of database. Schema includes how the data are stored in tables, how the tables are related with each other and so on. There are three types of schema architecture:
+i.Internal Schema
+Internal schema defines how the data is stored and retrieved physically(hard disks)
+ii.Conceptual Schema
+Conceptual schema defines how the data are kept in tables and what are the relationships between tables.
+iii.External Schema
+External schema defines how the datas are presented to the customer or the user. There might be many types of data but every data is not required for every user. We should provide only the data that the user needs. 
+
+The advantages are as follows:
+i. Customized datas:
+We can show the users customized datas as per the need of the user as defined in external schema.
+
+ii.Logical data independence.
+We can bring changes to the conceptual schema without disturbing the external schema. We can evolve the databases without the user feeling any disturbances.
+
+iii.Physical Data independence.
+If we want to change the way how our data is stored. We can also do it seamlessly.
+
