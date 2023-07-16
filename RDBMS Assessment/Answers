@@ -1,0 +1,107 @@
+1.What is RDBMS? Why do industries use RDBMS?
+RDBMS stands for Relational Database Management system stores everything in the form of relations/tables which represents the real-world entities and there is relationship formed between them. The industries use RDBMS because of the following reason:
+i.Transaction
+Transaction means either all or nothing. Without full and clean RDBMS, transaction might not be as easy as it is now. RDBMS also helps in banking operations and reservations.
+ii.Structured Schema
+The data in RDBMS is properly structured. For example all the datas in KYC for every customer contains name, date of birth, address etc.
+
+iii.Relational Data
+As most of the real-world entity has relation to each other, we obtain relational data which can be properly represented by RDBMS.
+
+iv.Data Integrity
+In RDBMS, we cannot insert wrong data. It checks and only if follows the rules of the table which may be pre-defined or is later defined by the user, will it be allowed to be inserted in the table which lead to completeness of data.
+
+v.Easy and good community support.
+This management system is very easy to understand use. Since it has a large market, there is good community support also.
+2.Explain the relationship data model in depth.
+
+
+3. What is the importance of Relationships in a Database management system? Explain the types of relationships.
+The importance of relationship in a database management system is it helps to connect many tables, which will make it easier for searching, inserting, reading data etc. This will also make it a single unit and not an individual entities.
+The different types of relationship in RDBMS are:
+i. One to one relationship
+When one entity  has connection with another entity, this type of relationship is called one to one relationship. For example, a citizen has only one citizenship.
+
+ii.One to many relationship.
+When an entity is connected to many other entities, this relationship is said to be one to many relationship. For example, a teacher teaches many students.
+
+iii.Many to many relationship.
+When many entities are connected to many other entities, this type of relationship is said to be many to many relationship. For example, many student could take a course and a course contains multiple students.
+
+
+4.Explain the different types of keys in RDBMS considering a real-life scenario.
+Keys are column or collection of column which is used to uniquely indetify datas. The different types of keys in RDBMS are:
+i.Super Key
+Super key is the set of all the possible keys in  a given table.
+
+ii.Candidate key
+Candidate key is the sub set of super key. We cannot make candidate key with redundant data. The data must be unique to make candidate key.
+
+iii.Primary key
+Primary key is used to uniquely identify each column in a table. Every candidate key is a primary key but we can only take one candidate key as a primary key.
+
+iv.Alternate key
+Alternate key are all the leftover keys in a candidate key except the primary key.
+
+v.Foregin key
+Foreign key is used to link two tables/relations/entity. The foreign key for a table is also used in another table which might be a primary key. Foregin key also ensures data integrity.
+
+vi.Composite key
+Sometimes it is not possible to make an individual column primary key so during these times, we take multiple columns and make it a primary key and this key is composite key.
+
+vii.Artifical Key
+Whenever no primary key is possible or the composite key is too long, we can also create a new column which will be unique. This key is called artificial key.
+
+5.Write a short note on Single Responsibility Principle.
+Single Responisiblitity principle is the principle in which there is only a data about a single entity. If there is data about more than one entity, then it does not follow the rule of single responsibility principle which is compulsory for RDBMS.
+
+6.Explain the different types of errors that could arise in a denormalized database.
+The different types of errors that could arise in a denormalized database are:
+i.Updation anamoly
+Whenever we update a data, the original data gets completely removed and only the new data is kept which is not proper becuase we will need the data of the original at some point.
+
+ii.Deletion Anamoly
+Whenever we delete a data, other respective datas also gets deleted which we don't want to delete.
+
+iii.Insertion anamoly.
+In insertion anamoly,we are not allowed to insert new datas becuase we don't have others data necessary for the data to be inserted.
+
+7.What is normalization and what is the need for normalization?
+Normalization is the process of decomposing the table to reduce redundancy. Normalization is used to normalize the denormalized table. It is mainly used to reduce redundancy and maintain data consistency by removing the anamolies such as updation anamoly,insertion and deletion anamoly.
+8.List out the different leves of Normalization and explain them in detail.
+The different levels of normalization are:
+i.1NF
+1NF or 1st Normal form is the form in which all the cell is atomic meaning it does not have multiple values. Another condition for 1NF is that it should contain a primary key.
+
+ii.2NF
+To be in 2nd normal form, it must satisfy two conditions.The first condition is it should be in 1NF and second is there should be no partial functional dependency. If there is partial functional dependency, identify where there is partial functional depency and break out those columns to create a new table.
+
+iii.3rd Normal Form
+To be in 3rd Noraml form, it must also be in 2NF form and there should be no transitive dependency. It is also called indirect dependency. 
+To convert into 3NF, we should:
+a.Identify the columns which are transitively dependent.
+b.Breakout the columns into new table.
+
+4.BCNF
+BCNF stands for Boyce Codd Normal Form. For BCNF, it must already be in 3NF.
+If x depends upon y then y should be common column and x should be the part of primary key.
+
+
+9.What are joins and why do we need them?
+Joins is the process of combining data from multiple tables. We need joins to 
+get information/reports/status by extracting data from multiple tables and combining them.
+
+
+10.Explain the different types of joins?
+The different types of joins are:
+i.Inner Join
+When the common data is taken from one or more table and they are combined. This is called inner join.
+ 
+ii.Left join
+When the common data is combined with the table in the left side, it is left join.
+
+iii.Right join
+When the common data is combined withe the table in the right side, it is right join.
+
+iv.Full Join
+When the common data is combined with both the tables in both the sides, this is full join.
