@@ -1,17 +1,15 @@
 import userModel from '../models/model.js';
 import emailValidator from 'email-validator';
+import bcrypt from 'bcrypt';
+
 const home=(req,res)=>{
     res.status(200).json({
         data:"Hi there!"
     })
 }
 const register=async(req,res)=>{
-    try{
-        const {user_name,user_email,user_password}=req.body;
-        console.log(user_name,user_email,user_password);
-        if(!user_name||!user_email||!user_password){
-            throw new Error("All fields are required.")
-        }
+    const{user_name,user_email,user_password}=req.body;
+    try{    
         if(user_name.length<5||user_name.length>50||user_password.length<8){
             throw new Error("Check the length of respective fields");
         }
@@ -34,8 +32,14 @@ const register=async(req,res)=>{
             data:user
         })
     }catch(e){
+        if(e.code==11000){
+            return res.status(400).json({
+                success:false,
+                message:"An account already exists with this email id."
+            })
+        }
         console.log(e);
-        res.status(400).json({
+        return res.status(400).json({
             success:false,
             message:e.message
         })
@@ -45,32 +49,29 @@ const register=async(req,res)=>{
 const login=async(req,res)=>{
     try{
         const {user_email,user_password}=req.body;
-        if(!user_email||!user_password){
-            return  res.status(400).json({
+        const user=await                    userModel.findOne({email:user_email}).select('+password');
+        if(!user|| !(await bcrypt.compare(user_password,user.password))){
+            return res.status(400).json({
                 success:false,
-                message:"Please input all the fields"
+                message:"Invalid Credentials"
             })
         }
-        const user=await                    userModel.findOne({email:user_email});
-        if(!user){
-            throw new Error("No data found");
-        }
-        if(user_email==user.email&&user_password==user.password){
+        // if(user_email==user.email&&user_password==user.password){
             return res.status(200).json({
                 success:true,
                 message:"User login successfully",
                 data:user
             })
-        }else{
-            return res.status(400).json({
-                success:false,
-                message:"Invalid Password"
-            })
-        }
+        // }else{
+            // return res.status(400).json({
+            //     success:false,
+            //     message:"Invalid Password"
+            // })
+        // }
         
     }catch(e){
         console.log(e);
-        res.status(400).json({
+        return res.status(400).json({
             success:false,
             message:e.message
         })

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="imgContainer">
+        <img src="./img/eye.avif" alt="Eye focused">
+        <p class="username">John Doe</p>
+        <p class="bio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, perferendis?</p>
+        <p class="email">demo@gmail.com</p>
+        <p class="follower-count">Followers: 1000</p>
+    </main>
+</body>
+<script>
+    const token=localStorage.getItem('token');
+   const fetchData=async()=>{
+    try{
+        const response=await fetch("http://localhost:5000/api/",{
+            method:'GET',
+            headers:{
+                Authorization:`Bearer ${token}`
+            }
+        });
+        if(response.status!='200'){
+            window.location.href="http://localhost:5501/Client/Login.html"
+        }
+        const data=await response.json();
+        
+        const username=document.querySelector('.username');
+        const email=document.querySelector('.email');
+        username.innerText=data.username;
+        email.innerText=data.email;
+    }catch(err){
+        console.log("Error fetching data:",err);
+    }
+   }
+   fetchData();
+
+</script>
+</html>
